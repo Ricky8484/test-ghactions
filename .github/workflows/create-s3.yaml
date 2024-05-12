@@ -26,8 +26,8 @@ jobs:
             - name: configure aws credentials
               uses: aws-actions/configure-aws-credentials@v3
               with:
-                role-to-assume: arn:aws:iam::176377892878:role/new-role2
-                role-session-name: new-role2
+                role-to-assume: arn:aws:iam::176377892878:role/link
+                role-session-name: link
                 aws-region: us-east-1
 
             - name: terraform
