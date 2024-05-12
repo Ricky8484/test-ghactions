@@ -8,6 +8,10 @@ on:
 
 env:
     tf_actions_working_dir: ./terraform
+permissions: 
+            pull-requests: write
+            id-token: write
+            contents: read  
 jobs:
     create-s3:
         runs-on: ubuntu-latest
@@ -89,4 +93,3 @@ jobs:
                   }) 
 
 
-                  
